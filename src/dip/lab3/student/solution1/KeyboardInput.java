@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author brandonstoiber
  */
-public class KeyboardInput implements Reader{
+public class KeyboardInput implements Input{
     // stores keyboard input from the user.  
     @Override
     public final String inputMessage(){

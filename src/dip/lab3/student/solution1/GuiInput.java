@@ -9,12 +9,13 @@ package dip.lab3.student.solution1;
  *
  * @author brandonstoiber
  */
-public class GuiInput implements Reader{
+public class GuiInput implements Input{
     private String message;
     
     @Override
     public final String inputMessage() {
         System.out.println("Enter your message.");
+        // should allow a pop up box to enter a message.
         message = javax.swing.JOptionPane.showInputDialog(" enter your text ");
         return message;
     }

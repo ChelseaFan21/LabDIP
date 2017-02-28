@@ -9,7 +9,9 @@ package dip.lab3.student.solution1;
  *
  * @author brandonstoiber
  */
-public interface Reader {
-    // allows for different messages to be displayed when used by the different inputs. 
-    public abstract String inputMessage();
+public class printLineOutput {
+    
+    public final void outputMessage(String message){
+        System.out.println(message);
+    }
 }
