@@ -13,7 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class GuiOutput implements Output{
     
-    public final void outputMessage(String message) {
-    JOptionPane.showMessageDialog(null, message);
+    public final void outputMessage(Input inputMessage) {
+    JOptionPane.showMessageDialog(null, inputMessage.getInputMessage());
 }
+
+   
 }

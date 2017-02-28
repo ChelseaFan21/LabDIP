@@ -9,9 +9,10 @@ package dip.lab3.student.solution1;
  *
  * @author brandonstoiber
  */
-public class printLineOutput {
+public class printLineOutput implements Output{
+
     
-    public final void outputMessage(String message){
-        System.out.println(message);
+    public final void outputMessage(Input inputMessage){
+        System.out.println(inputMessage.getInputMessage());
     }
 }

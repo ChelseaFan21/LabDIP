@@ -12,30 +12,14 @@ package dip.lab3.student.solution1;
 public class inputOutputService {
     private Input newInput;
     private Output newOutput;
-    
-    public inputOutputService(Input newInput, Output newOutput){
-        setNewInput(newInput);
-        setNewOutput(newOutput);
-    }
 
-    public final Input getNewInput() {
-        return newInput;
-    }
-
-    public final void setNewInput(Input newInput) {
+    public inputOutputService(Input newInput, Output newOutput) {
         this.newInput = newInput;
-    }
-
-    public final Output getNewOutput() {
-        return newOutput;
-    }
-
-    public final void setNewOutput(Output newOutput) {
         this.newOutput = newOutput;
     }
-    public final void inputOutputMessage(){
-        getNewInput();
-        getNewOutput();
+
+    public void outputMessage(){
+        newOutput.outputMessage(newInput);
     }
     
 }

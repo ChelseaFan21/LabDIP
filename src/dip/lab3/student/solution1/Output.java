@@ -11,8 +11,6 @@ package dip.lab3.student.solution1;
  */
 public interface Output {
     
-    /**
-     *
-     */
-    public abstract void outputMessage(String Message);
+   
+    public abstract void outputMessage(Input inputMessage);
 }
