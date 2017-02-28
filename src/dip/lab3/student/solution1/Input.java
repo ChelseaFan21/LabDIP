@@ -13,5 +13,5 @@ public interface Input {
     // allows for different messages to be displayed when used by the different inputs. 
     public abstract String getInputMessage();
     
-    public abstract void setInputMessage();
+   
 }

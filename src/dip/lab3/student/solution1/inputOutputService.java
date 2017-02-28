@@ -18,7 +18,7 @@ public class inputOutputService {
         this.newOutput = newOutput;
     }
 
-    public void outputMessage(){
+    public final void outputMessage(){
         newOutput.outputMessage(newInput);
     }
     

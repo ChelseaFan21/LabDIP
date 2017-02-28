@@ -10,19 +10,15 @@ package dip.lab3.student.solution1;
  * @author brandonstoiber
  */
 public class GuiInput implements Input{
-    private String inputMessage;
+    private String message;
     
     @Override
-    public String getInputMessage() {
-        return inputMessage;
+    public final String getInputMessage() {
+        System.out.println("Enter your message.");
+        // should allow a pop up box to enter a message.
+        message = javax.swing.JOptionPane.showInputDialog(" enter your text ");
+        return message;
     }
-    
-    @Override
-    public void setInputMessage() {
-        this.inputMessage = javax.swing.JOptionPane.showInputDialog(" enter your text ");;
-    }
-    
-    
     
 
 }

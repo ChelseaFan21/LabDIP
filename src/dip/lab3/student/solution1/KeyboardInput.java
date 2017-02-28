@@ -12,21 +12,11 @@ import java.util.Scanner;
  * @author brandonstoiber
  */
 public class KeyboardInput implements Input{
-    Scanner keyboard = new Scanner(System.in);
-    private String inputMessage;
     // stores keyboard input from the user.  
-
-   
-
     @Override
-    public final String getInputMessage() {
-        return inputMessage;
+    public final String getInputMessage(){
+    System.out.println("Please enter the message you wish to store.");
+    Scanner keyboard = new Scanner(System.in);
+    return keyboard.nextLine();
     }
-    @Override
-    public final void setInputMessage() {
-        this.inputMessage = keyboard.nextLine();
-    }
-
-   
-  
 }
